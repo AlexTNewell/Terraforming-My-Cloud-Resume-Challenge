@@ -37,7 +37,7 @@ jobs:
         working-directory: CRC_Terraform
       - run: terraform plan
         working-directory: CRC_Terraform
-      - run: terraform apply
+      - run: terraform apply -auto-approve
         working-directory: CRC_Terraform
 
 
