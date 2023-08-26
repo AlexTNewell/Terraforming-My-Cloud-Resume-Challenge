@@ -38,7 +38,7 @@ In reality all the below steps are completed simultaneously using Terraform. How
 
 ## Skills and Technologies Used:
 Software Development (Frontend / Backend)  
-IaC (Infrastructure as Code) using CloudFormation, SAM, CDK  
+IaC (Infrastructure as Code) using Terraform
 CI/CD (GitHub Actions)  
 Serverless Architecture on AWS (Lambda, API Gateway, DynamoDB, S3)  
 Security (IAM, bucket policies, API authentication/authorization)  
