@@ -1,6 +1,6 @@
 # Terraforming-My-Cloud-Resume-Challenge
 
-The Cloud Resume Challenge is a series of challenges designed to develop one's proficiency in AWS, in  writing infrastructure as code and in building CI/CD piplines.
+The Cloud Resume Challenge is a series of challenges designed to develop your proficiency in AWS, infrastructure as code and CI/CD.
 
 The primary objective is to develop and deploy a static website that serves as a professional resume.
 
