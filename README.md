@@ -3,9 +3,8 @@
 ## Background
 The Cloud Resume Challenge is a series of challenges designed to develop your proficiency in AWS, infrastructure as code and CI/CD.
 
-The original challenge is to use CloudFormation to porvision all the infra
-
-However, I wanted to challenge myself and use Terraform.
+The original challenge is to provision all the infrastructure using CloudFormation.  
+This version is an extension to the original challenge where you use Terraform instead. 
 
 For my completed version of the original challenge using CloudFormation see:  
 https://github.com/AlexTNewell/Cloud-Resume-Challenge-CloudFormation
