@@ -1,7 +1,18 @@
 # Terraforming-My-Cloud-Resume-Challenge
 
-The Cloud Resume Challenge encompasses a series of carefully designed challenges aimed at cementing one's proficiency in AWS, while enhancing one's ability to implement IaC and CI/CD piplines. The primary objective is to develop and deploy a static website that serves as a professional resume.
+The Cloud Resume Challenge is a series of challenges designed to develop one's proficiency in AWS, in  writing infrastructure as code and in building CI/CD piplines.
 
-Full details can be found here: https://cloudresumechallenge.dev/docs/the-challenge/aws/
+The primary objective is to develop and deploy a static website that serves as a professional resume.
 
-While I originally completed the challenge using CloudFormation, I wanted to challenge myself and also complete it using Terraform. For more information see here: https://cloudresumechallenge.dev/docs/extensions/terraform-getting-started/.
+The original challenge is to use CloudFormation.
+
+However, I wanted to challenge myself and use Terraform.
+
+For my completed version of the original challenge using CloudFormation see: 
+https://github.com/AlexTNewell/Cloud-Resume-Challenge-CloudFormation
+
+For more information on the original challenge see:
+https://cloudresumechallenge.dev/docs/the-challenge/aws/
+
+For more information on the Terraform extension to the original challenge see:
+https://cloudresumechallenge.dev/docs/extensions/terraform-getting-started/.
