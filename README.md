@@ -10,7 +10,7 @@ However, I wanted to challenge myself and use Terraform.
 For my completed version of the original challenge using CloudFormation see:  
 https://github.com/AlexTNewell/Cloud-Resume-Challenge-CloudFormation
 
-For more information on the original challenge see: 
+For more information on the original challenge see:  
 https://cloudresumechallenge.dev/docs/the-challenge/aws/
 
 For more information on the Terraform extension to the original challenge see: 
