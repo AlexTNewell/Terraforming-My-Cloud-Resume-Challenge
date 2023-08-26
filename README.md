@@ -37,9 +37,9 @@ In reality all the below steps are completed simultaneously using Terraform. How
 - Congifure the deployment pipeline such that when the tests pass the push goes ahead. If it fails the deployment should rollback. 
 
 ## Skills and Technologies Used:
-Software Development (Frontend / Backend)
-IaC (Infrastructure as Code) using CloudFormation, SAM, CDK
-CI/CD (GitHub Actions)
-Serverless Architecture on AWS (Lambda, API Gateway, DynamoDB, S3)
-Security (IAM, bucket policies, API authentication/authorization)
+Software Development (Frontend / Backend)  
+IaC (Infrastructure as Code) using CloudFormation, SAM, CDK  
+CI/CD (GitHub Actions)  
+Serverless Architecture on AWS (Lambda, API Gateway, DynamoDB, S3)  
+Security (IAM, bucket policies, API authentication/authorization)  
 Networking (DNS using Route53)
