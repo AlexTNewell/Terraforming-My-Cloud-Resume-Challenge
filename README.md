@@ -1,5 +1,8 @@
 # Terraforming-My-Cloud-Resume-Challenge
 
+## Visit The Website
+https://alexandertnewell.com/
+
 ## Background
 The Cloud Resume Challenge is a series of challenges designed to develop your proficiency in AWS, infrastructure as code and CI/CD.
 
