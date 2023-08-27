@@ -72,7 +72,8 @@ resource "aws_s3_bucket_policy" "hosting_bucket_policy" {
           "StringEquals" : {
             "aws:SourceOrigin": [
               "https://alexandertnewell.com",
-              "https://fonts.googleapis.com"
+              "https://fonts.googleapis.com",
+              "https://unpkg.com"
             ]
           }
         }
