@@ -28,7 +28,11 @@ resource "aws_s3_bucket_cors_configuration" "hosting_bucket_cors" {
   bucket = aws_s3_bucket.hosting_bucket.id
 
   cors_rule {
-    allowed_origins = ["*"]  
+    allowed_origins = [
+      "https://alexandertnewell.com",
+      "https://fonts.googleapis.com",
+      "https://unpkg.com",
+    ]
     allowed_methods = ["GET"]
     allowed_headers = ["*"]
   }
@@ -68,13 +72,6 @@ resource "aws_s3_bucket_policy" "hosting_bucket_policy" {
         "Principal" : "*",
         "Action" : "s3:GetObject",
         "Resource" : "arn:aws:s3:::hms-victory/*",
-        "Condition" : {
-          "StringEquals" : {
-            "aws:SourceOrigin": [
-              "https://alexandertnewell.com",
-              "https://fonts.googleapis.com",
-              "https://unpkg.com"
-            ]
           }
         }
       }
