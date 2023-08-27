@@ -1,0 +1,93 @@
+.dockerised-python-app-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.dockerised-python-app-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dockerised-python-app-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dockerised-python-app-text {
+  margin-top: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-fiveunits);
+}
+.dockerised-python-app-link {
+  display: contents;
+}
+.dockerised-python-app-image {
+  right: -84px;
+  width: 64px;
+  bottom: 23px;
+  height: 83px;
+  position: absolute;
+  object-fit: cover;
+  text-decoration: none;
+}
+.dockerised-python-app-text01 {
+  font-style: italic;
+  margin-top: 0nits;
+  font-weight: 400;
+  margin-bottom: 0nits;
+}
+.dockerised-python-app-text02 {
+  margin-top: var(--dl-space-space-tenunits);
+  margin-left: var(--dl-space-space-fiveunits);
+  margin-right: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-tenunits);
+}
+.dockerised-python-app-text10 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-text11 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-text12 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-text13 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-text14 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-text15 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-text16 {
+  font-style: normal;
+  font-weight: 700;
+}
+.dockerised-python-app-link1 {
+  text-decoration: underline;
+}
+.dockerised-python-app-link2 {
+  text-decoration: underline;
+}
+.dockerised-python-app-text53 {
+  font-style: normal;
+  font-weight: 700;
+}
