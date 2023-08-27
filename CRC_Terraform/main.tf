@@ -24,6 +24,16 @@ resource "aws_s3_bucket" "hosting_bucket" {
   bucket = var.bucket_name
 }
 
+resource "aws_s3_bucket_cors_configuration" "hosting_bucket_cors" {
+  bucket = aws_s3_bucket.hosting_bucket.id
+
+  cors_rule {
+    allowed_origins = ["*"]  
+    allowed_methods = ["GET"]
+    allowed_headers = ["*"]
+  }
+}
+
 resource "aws_s3_bucket_ownership_controls" "hosting_bucket_ownership" {
   bucket = aws_s3_bucket.hosting_bucket.id
 
