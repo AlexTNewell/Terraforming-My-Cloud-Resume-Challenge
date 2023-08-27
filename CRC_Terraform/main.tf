@@ -57,18 +57,20 @@ resource "aws_s3_bucket_policy" "hosting_bucket_policy" {
         "Effect" : "Allow",
         "Principal" : "*",
         "Action" : "s3:GetObject",
-        "Resource" : "arn:aws:s3:::hms-victory/*"
+        "Resource" : "arn:aws:s3:::hms-victory/*",
         "Condition" : {
-          StringEquals : {
+          "StringEquals" : {
             "aws:SourceOrigin": [
               "https://alexandertnewell.com",
-            "aws:SourceOrigin": "https://fonts.googleapis.com"
-            ]  
+              "https://fonts.googleapis.com"
+            ]
           }
+        }
       }
     ]
   })
 }
+
 
 resource "aws_s3_bucket_website_configuration" "hosting_bucket_website_configuration" {
   bucket = aws_s3_bucket.hosting_bucket.id
