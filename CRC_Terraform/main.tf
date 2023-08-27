@@ -58,6 +58,13 @@ resource "aws_s3_bucket_policy" "hosting_bucket_policy" {
         "Principal" : "*",
         "Action" : "s3:GetObject",
         "Resource" : "arn:aws:s3:::hms-victory/*"
+        "Condition" : {
+          StringEquals : {
+            "aws:SourceOrigin": [
+              "https://alexandertnewell.com",
+            "aws:SourceOrigin": "https://fonts.googleapis.com"
+            ]  
+          }
       }
     ]
   })
