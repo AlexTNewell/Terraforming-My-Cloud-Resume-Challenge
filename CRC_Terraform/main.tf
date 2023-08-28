@@ -17,8 +17,8 @@ module "template_files" {
 }
 ##################### S3 #####################
 
-data "aws_cloudfront_cache_policy" "cachingOptimized" {
-  name = "Managed-CachingOptimized"
+data "aws_cloudfront_cache_policy" "cachingDisabled" {
+  name = "Managed-CachingDisabled"
 }
 
 data "aws_cloudfront_origin_request_policy" "corsS3Origin" {
@@ -140,7 +140,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = local.s3_origin_id
-    cache_policy_id             = data.aws_cloudfront_cache_policy.cachingOptimized.id
+    cache_policy_id             = data.aws_cloudfront_cache_policy.cachingDisabled.id
     origin_request_policy_id    = data.aws_cloudfront_origin_request_policy.corsS3Origin.id
 
     viewer_protocol_policy = "redirect-to-https"
