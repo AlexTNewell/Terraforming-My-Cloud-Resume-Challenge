@@ -129,10 +129,13 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   comment             = "Some comment"
   default_root_object = "index.html"
 
+  origin_request_policy_id = aws_cloudfront_origin_request_policy.cors-s3-origin.id
+
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
     target_origin_id = local.s3_origin_id
+    cache_policy_id = aws_cloudfront_cache_policy.no-cache.id
 
     forwarded_values {
       query_string = false
@@ -165,7 +168,39 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   aliases = ["alexandertnewell.com"]
 }
 
+resource "aws_cloudfront_origin_request_policy" "cors-s3-origin" {
+  name    = "cors-s3-origin"
+  cookies_config {
+    cookie_behavior = "none"
+  }
+  headers_config {
+    header_behavior = "headers"
+    headers {
+      items = ["origin","access-control-request-headers","access-control-request-method"]
+    }
+  }
+  query_strings_config {
+    query_string_behavior = "none"
+  }
+}
 
+resource "aws_cloudfront_cache_policy" "no-cache" {
+  name        = "No-Cache"
+  default_ttl = 0
+  max_ttl     = 0
+  min_ttl     = 0
+  parameters_in_cache_key_and_forwarded_to_origin {
+    cookies_config {
+      cookie_behavior = "none"
+    }
+    headers_config {
+      header_behavior = "none"
+    }
+    query_strings_config {
+      query_string_behavior = "none"
+    }
+  }
+}
 ##################### Route 53 #####################
 
 resource "aws_route53_zone" "MyRoute53Zone" {
