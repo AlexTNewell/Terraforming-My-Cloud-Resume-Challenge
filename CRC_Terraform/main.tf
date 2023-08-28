@@ -136,8 +136,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   comment             = "Some comment"
   default_root_object = "index.html"
 
-  origin_request_policy_id = aws_cloudfront_origin_request_policy.cors-s3-origin.id
-
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
