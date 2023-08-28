@@ -143,11 +143,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     cache_policy_id             = data.aws_cloudfront_cache_policy.cachingOptimized.id
     origin_request_policy_id    = data.aws_cloudfront_origin_request_policy.corsS3Origin.id
 
-      cookies {
-        forward = "none"
-      }
-    }
-
     viewer_protocol_policy = "redirect-to-https"
     min_ttl                = 0
     default_ttl            = 0
