@@ -40,6 +40,23 @@ jobs:
       - run: terraform apply -auto-approve
         working-directory: CRC_Terraform
 
+  build-frontend:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install Parcel and dependencies
+        run: npm install parcel-bundler
+
+      - name: Build frontend
+        run: npx parcel build CRC_Terraform/website-resources/index.html
 
   deploy-frontend:
     runs-on: ubuntu-latest
