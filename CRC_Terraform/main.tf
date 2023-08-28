@@ -143,9 +143,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     cache_policy_id             = data.aws_cloudfront_cache_policy.cachingOptimized.id
     origin_request_policy_id    = data.aws_cloudfront_origin_request_policy.corsS3Origin.id
 
-    forwarded_values {
-      query_string = false
-
       cookies {
         forward = "none"
       }
