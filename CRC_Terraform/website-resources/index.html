@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+    <meta property="og:title" content="Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      fetch('https://hr1w97khtd.execute-api.us-east-1.amazonaws.com/Prod/count')
+        .then(response => response.json())
+        .then((data) => {
+          document.getElementById('theCount').innerText = data.count;
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+       </script>
+  </head>
+  <body>
+    <div>
+      <link href="index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-intro">
+          <div class="home-hero-text-container">
+            <h1 class="home-heading Section-Heading">Alexander Newell</h1>
+            <h1 class="home-text">DevOps Engineer</h1>
+            <span class="home-text001">
+              Motivated DevOps Engineer experienced in designing, implementing,
+              and maintaining CI/CD pipelines, infrastructure automation, and
+              cloud environments. Adept at optimising development workflows,
+              enhancing system reliability, and ensuring seamless application
+              deployment. Proficient in crafting monitoring and alerting setups
+              using CloudWatch. Committed to skill growth and continuous
+              learning. Strong communicator, enjoys working in a team and
+              independent problem-solving.
+            </span>
+            <div class="home-container01">
+              <span class="home-text002">
+                <span>Location:</span>
+                <span class="home-text004">Westminster, London, UK</span>
+                <br />
+                <span>Right to</span>
+                <span class="home-text007">Work: United Kingdom, EEA</span>
+                <br />
+              </span>
+              <span class="home-text009">
+                <span>Contact:</span>
+                <a
+                  href="mailto:anewell.cloud@gmail.com?subject=Website Contact"
+                  class="home-link"
+                >
+                  anewell.cloud@gmail.com
+                </a>
+                <br />
+              </span>
+              <span class="home-text012">
+                Welcome! You are visistor number <span id="theCount"></span>
+              </span>
+              <div class="home-container02">
+                <a
+                  href="https://www.linkedin.com/in/alexander-n-4a3743148/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link01"
+                >
+                  <img
+                    src="public/linkedin-icon-1024x1024-net2o24e-200h.png"
+                    alt="image"
+                    class="home-image"
+                  />
+                </a>
+                <a
+                  href="https://github.com/AlexTNewell"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link02"
+                >
+                  <img
+                    src="public/cat-icon-github-github-pages-user-computer-share-icon-source-code-black-png-clipart-200h.jpeg"
+                    alt="image"
+                    class="home-image1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="home-cta-btn-container">
+              <a href="#portfolio" class="home-cta-btn Anchor button">
+                <span class="home-text013">PORTFOLIO</span>
+              </a>
+              <a href="#hire-me" class="home-cta-btn1 Anchor button">HIRE ME</a>
+            </div>
+          </div>
+        </div>
+        <div id="cv" class="home-cv">
+          <div class="home-container03">
+            <div class="home-container04">
+              <div class="home-container05">
+                <h1 class="home-text014">Certifications</h1>
+                <div class="home-container06">
+                  <img
+                    alt="image"
+                    src="public/cloud-pract-200h.png"
+                    class="home-image2"
+                  />
+                  <img
+                    alt="image"
+                    src="public/aws-solu-arch-200h.png"
+                    class="home-image3"
+                  />
+                </div>
+              </div>
+              <div class="home-container07">
+                <h1 class="home-text015">Skills</h1>
+                <div class="home-container08">
+                  <span class="home-text016">OS</span>
+                  <ul class="home-ul list">
+                    <li class="list-item">
+                      <span class="home-text017">MacOS</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text018">Linux</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container09">
+                  <span class="home-text019">Cloud Platforms</span>
+                  <ul class="home-ul01 list">
+                    <li class="list-item">
+                      <span class="home-text020">AWS</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container10">
+                  <span class="home-text021">Infrastructure as Code</span>
+                  <ul class="home-ul02 list">
+                    <li class="list-item">
+                      <span class="home-text022">CloudFormation</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text023">Linux</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container11">
+                  <span class="home-text024">DevOps Tools</span>
+                  <ul class="home-ul03 list">
+                    <li class="list-item">
+                      <span class="home-text025">Docker</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text026">Kubernetes</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container12">
+                  <span class="home-text027">CI/CD Automation</span>
+                  <ul class="home-ul04 list">
+                    <li class="list-item">
+                      <span class="home-text028">GitHub Actions</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container13">
+                  <span class="home-text029">Monitoring</span>
+                  <ul class="home-ul05 list">
+                    <li class="list-item">
+                      <span class="home-text030">CloudWatch</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container14">
+                  <span class="home-text031">Scripting</span>
+                  <ul class="home-ul06 list">
+                    <li class="list-item">
+                      <span class="home-text032">Bash</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text033">Python</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container15">
+                  <span class="home-text034">Languages</span>
+                  <ul class="home-ul07 list">
+                    <li class="list-item">
+                      <span class="home-text035">Python</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text036">Javascript</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text037">HTML</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text038">CSS</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container16">
+                  <span class="home-text039">Version Control</span>
+                  <ul class="home-ul08 list">
+                    <li class="list-item">
+                      <span class="home-text040">Git</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text041">GitHub</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-container17">
+                  <span class="home-text042">Databases</span>
+                  <ul class="home-ul09 list">
+                    <li class="list-item">
+                      <span class="home-text043">RDS</span>
+                    </li>
+                    <li class="list-item">
+                      <span class="home-text044">DynamoDB</span>
+                      <span class="home-text045">MongoDB</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="home-container18">
+              <h1 class="home-text046">Professional Experience</h1>
+              <h1 class="home-text047">Freelance DevOps Engineer</h1>
+              <span class="home-text048">May 2022. - Present</span>
+              <ul class="home-ul10 list">
+                <li class="list-item">
+                  <span class="home-text049">
+                    Experienced in designing, developing and maintaining CI/CD
+                    pipelines for various applications using automation tools
+                    such as GitHub Actions.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text050">
+                    Wrote unit and integration tests to ensure seamless
+                    application deployments.&nbsp;
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text051">
+                    Adept at automated infrastructure provisioning using
+                    Terraform, CloudFormation, AWS SAML and AWS Vault.&nbsp;
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text052">
+                    Proficient in building and deploying containerised
+                    applications using Docker and Docker compose.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text053">
+                    Skilled in designing and implementing efficient multi-stage
+                    Docker builds to optimize the containerization process.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text054">
+                    Competent in building, deploying and troubleshooting
+                    Kubernetes clusters and applications.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text055">
+                    Proficient in establishing application, infrastructure,
+                    network and cost monitoring systems to ensure swift
+                    resolution of issues.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text056">
+                    Adhired to Git workflows and best practices, enhancing code
+                    collaboration and version control.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text057">
+                    Utilized effective dependency-management strategies to
+                    ensure applications were tested in production-like
+                    environments prior to deployment.&nbsp;
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text058">
+                    Effective configuration and management of servers to ensure
+                    seamless and efficient operation of cloud-based
+                    applications.&nbsp;
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text059">
+                    Led capacity planning discussions and architected
+                    highly-available, scalable, cost-optimised,
+                    operationally-efficient and secure solutions.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text060">
+                    Proactively communicated with clients to track progress
+                    towards key project milestones.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text061">
+                    Continuously researched and evaluated new technologies to
+                    improve system performance and reliability.
+                  </span>
+                </li>
+                <li class="list-item">
+                  <span class="home-text062">
+                    Cognizant of others while working, for example, by writing
+                    meaningful commit messages.
+                  </span>
+                </li>
+              </ul>
+              <h1 class="home-text063">Education</h1>
+              <div class="home-container19">
+                <div class="home-container20">
+                  <a
+                    href="https://www.tcd.ie/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-link03"
+                  >
+                    Trinity College Dublin - Undergraduate Degree
+                  </a>
+                  <span class="home-text064">
+                    <span class="home-text065">Sep. 2015 - May 2019</span>
+                    <br />
+                    <span>History, Upper Second (2:1)</span>
+                    <br />
+                    <span>Dissertation in British Monetary Policy (First)</span>
+                    <br />
+                    <span>
+                      Finalist Oxford Intervaristy Debating Competition
+                    </span>
+                    <br />
+                  </span>
+                  <span class="home-text073">
+                    Colchester Sixth Form -&nbsp;International Baccalaureate
+                  </span>
+                  <span class="home-text074">
+                    <span class="home-text075">Sep. 2012 - June 2014</span>
+                    <br />
+                    <span>
+                      38/45 points: top 4%. UCAS Equivalent: A* A* A* A.
+                    </span>
+                    <br />
+                  </span>
+                  <span class="home-text079">
+                    Helena Romanes School -&nbsp;GCSEs
+                  </span>
+                  <span class="home-text080">
+                    <span class="home-text081">Sep. 2007 - June 2012</span>
+                    <br />
+                    <span>
+                      10 GCSEs 3 A*s 7As. A Level in Philosophy taken one year
+                      early.&nbsp;
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-learning">
+          <div class="home-container21">
+            <h1 class="home-text085">
+              My Learning &amp; Certification Pipeline
+            </h1>
+            <div class="home-steps">
+              <div class="home-container22">
+                <div class="home-step">
+                  <h1 class="home-text086">September 2023</h1>
+                  <ul class="home-ul11 list">
+                    <li class="home-li33 list-item">
+                      <a
+                        href="https://training.mirantis.com/certification/dca-certification-exam/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-dca"
+                      >
+                        DCA
+                      </a>
+                    </li>
+                    <li class="home-li34 list-item">
+                      <a
+                        href="https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-ckad"
+                      >
+                        CKAD
+                      </a>
+                    </li>
+                    <li class="home-li35 list-item">
+                      <a
+                        href="https://www.lpi.org/our-certifications/lpic-1-overview/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-lpic-01"
+                      >
+                        LPIC-01
+                      </a>
+                    </li>
+                    <li class="home-li36 list-item">
+                      <a
+                        href="https://www.cloudbees.com/jenkins/certification"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-cje"
+                      >
+                        CJE
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-step1">
+                  <h1 class="home-text087">October 2023</h1>
+                  <ul class="home-ul12 list">
+                    <li class="home-li37 list-item">
+                      <span class="home-ansible">Ansible</span>
+                    </li>
+                    <li class="home-li38 list-item">
+                      <a
+                        href="https://training.linuxfoundation.org/certification/prometheus-certified-associate/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-prometheus"
+                      >
+                        Prometheus
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-step2">
+                  <h1 class="home-text088">November 2023</h1>
+                  <ul class="home-ul13 list">
+                    <li class="home-li39 list-item">
+                      <a
+                        href="https://aws.amazon.com/certification/certified-developer-associate/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-aws-dev"
+                      >
+                        AWS Developer Certification
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-step3">
+                  <h1 class="home-text089">December 2023</h1>
+                  <ul class="home-ul14 list">
+                    <li class="home-li40 list-item">
+                      <a
+                        href="https://aws.amazon.com/certification/certified-sysops-admin-associate/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-aws-dev1"
+                      >
+                        AWS SysOps Certification
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="home-step4">
+                  <h1 class="home-text090">January 2024</h1>
+                  <ul class="home-ul15 list">
+                    <li class="home-li41 list-item">
+                      <a
+                        href="https://aws.amazon.com/certification/certified-devops-engineer-professional/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-aws-dev2"
+                      >
+                        AWS DevOps Certification
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-portfolio">
+          <div class="home-heading-container">
+            <h1 id="portfolio" class="home-text091">Portfolio</h1>
+          </div>
+          <div class="home-pricing-card-container">
+            <div class="home-card">
+              <a
+                href="https://github.com/AlexTNewell/Cloud-Resume-Challenge-CloudFormation"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link04"
+              >
+                <div class="home-card-heading">
+                  <span class="home-price">Cloud Resume Challenge</span>
+                </div>
+              </a>
+              <div class="home-card-content">
+                <span class="home-name">
+                  The Cloud Resume Challenge is a series of challenges designed
+                  to develop your proficiency in AWS, infrastructure as code and
+                  CI/CD.
+                </span>
+                <div class="home-container23">
+                  <span class="home-name01">Tech</span>
+                  <ul class="home-ul16 list">
+                    <li class="list-item">
+                      <span>
+                        <span>Frontend (HTML, CSS, Javascript)</span>
+                        <br />
+                      </span>
+                    </li>
+                    <li class="list-item"><span>Backend (DynamoDB)</span></li>
+                    <li class="list-item"><span>API Gateway</span></li>
+                    <li class="list-item">
+                      <span>CI/CD (GitHub Actions)</span>
+                    </li>
+                    <li class="list-item"><span>Integration Testing</span></li>
+                    <li class="list-item"><span>IaC (CloudFormation)</span></li>
+                    <li class="list-item"><span>Lambda Functions</span></li>
+                    <li class="list-item">
+                      <span>Security &amp; Encryption</span>
+                    </li>
+                    <li class="list-item"><span>Networking</span></li>
+                    <li class="list-item"><span>AWS</span></li>
+                  </ul>
+                </div>
+                <a
+                  href="https://cloudresumechallenge.dev/docs/the-challenge/aws/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-name02"
+                >
+                  About The Cloud Resume Challenge&nbsp;
+                </a>
+                <a
+                  href="https://github.com/AlexTNewell/Cloud-Resume-Challenge-CloudFormation"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-choose button"
+                >
+                  CHECK IT OUT
+                </a>
+              </div>
+            </div>
+            <div class="home-card1">
+              <a
+                href="https://github.com/AlexTNewell/Terraforming-My-Cloud-Resume-Challenge"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link05"
+              >
+                <div class="home-card-heading1">
+                  <span class="home-price1">
+                    Terraforming My Cloud Resume Challenge
+                  </span>
+                </div>
+              </a>
+              <div class="home-card-content1">
+                <span class="home-name03">
+                  This project takes the Cloud Resume Challenge one step further
+                  by using Terraform.&nbsp;
+                </span>
+                <div class="home-container24">
+                  <span class="home-name04">Tech</span>
+                  <ul class="home-ul17 list">
+                    <li class="list-item">
+                      <span>
+                        <span>Frontend (HTML, CSS, Javascript)</span>
+                        <br />
+                      </span>
+                    </li>
+                    <li class="list-item"><span>Backend (DynamoDB)</span></li>
+                    <li class="list-item"><span>API Gateway</span></li>
+                    <li class="list-item">
+                      <span>CI/CD (GitHub Actions)</span>
+                    </li>
+                    <li class="list-item"><span>Integration Testing</span></li>
+                    <li class="list-item"><span>IaC (Terraform)</span></li>
+                    <li class="list-item"><span>Lambda Functions</span></li>
+                    <li class="list-item">
+                      <span>Security &amp; Encryption</span>
+                    </li>
+                    <li class="list-item"><span>Networking</span></li>
+                    <li class="list-item"><span>AWS</span></li>
+                  </ul>
+                </div>
+                <a
+                  href="https://cloudresumechallenge.dev/docs/the-challenge/aws/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-name05"
+                >
+                  <span>About The Extension Ch</span>
+                  <span>allenge</span>
+                </a>
+                <a
+                  href="https://github.com/AlexTNewell/Terraforming-My-Cloud-Resume-Challenge"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-choose1 button"
+                >
+                  CHECK IT OUT
+                </a>
+              </div>
+            </div>
+            <div class="home-card2">
+              <div class="home-card-heading2">
+                <span class="home-price2">
+                  Multi-AZ WordPress Site Hosted on EC2
+                </span>
+              </div>
+              <div class="home-card-content2">
+                <span class="home-name06">
+                  Developed for a media client, this multi-AZ project allows you
+                  to host a WordPress Site on EC2 instances in private subnets.
+                  Automated provisioning via GitHub Actions &amp;
+                  Terraform.&nbsp;
+                </span>
+                <div class="home-container25">
+                  <span class="home-name07">Tech</span>
+                  <ul class="home-ul18 list">
+                    <li class="list-item">
+                      <span>CI/CD (GitHub Actions)</span>
+                    </li>
+                    <li class="list-item"><span>IaC (Terraform)</span></li>
+                    <li class="list-item">
+                      <span>Server Configuration &amp; Management</span>
+                    </li>
+                    <li class="list-item">
+                      <span>Security &amp; Encryption</span>
+                    </li>
+                    <li class="list-item"><span>Networking</span></li>
+                    <li class="list-item"><span>AWS</span></li>
+                  </ul>
+                </div>
+                <button class="home-choose2 button">CHECK IT OUT</button>
+              </div>
+            </div>
+            <div class="home-card3">
+              <a
+                href="https://github.com/AlexTNewell/The_London_System"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link06"
+              >
+                <div class="home-card-heading3">
+                  <span class="home-price3 Section-Heading">
+                    Dockerised NGINX Web App Hosted on EC2
+                  </span>
+                </div>
+              </a>
+              <div class="home-card-content3">
+                <span class="home-name08">
+                  Developed for a Running Club to host their application which
+                  presented members with running tips and techniques, a
+                  leaderboard and a race calendar.&nbsp;
+                </span>
+                <div class="home-container26">
+                  <span class="home-name09">Tech</span>
+                  <ul class="home-ul19 list">
+                    <li class="list-item">
+                      <span>CI/CD (GitHub Actions)</span>
+                    </li>
+                    <li class="list-item"><span>IaC (Terraform)</span></li>
+                    <li class="list-item"><span>NGINX Configuration</span></li>
+                    <li class="list-item"><span>Docker</span></li>
+                    <li class="list-item">
+                      <span>Security &amp; Encryption</span>
+                    </li>
+                    <li class="list-item"><span>Networking</span></li>
+                    <li class="list-item"><span>AWS</span></li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/AlexTNewell/The_London_System"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-choose3 button"
+                >
+                  CHECK IT OUT
+                </a>
+              </div>
+            </div>
+            <div class="home-card4">
+              <a
+                href="https://github.com/AlexTNewell/3_Docker_Microservices"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link07"
+              >
+                <div class="home-card-heading4">
+                  <span class="home-price4 Section-Heading">
+                    Dockerised Microservices
+                  </span>
+                </div>
+              </a>
+              <div class="home-card-content4">
+                <span class="home-name10">
+                  A project to demonstrate my proficiency in Docker.
+                </span>
+                <a
+                  href="https://www.udemy.com/course/docker-kubernetes-the-practical-guide/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-name11"
+                >
+                  Built as part of the "Docker &amp; Kubernetes: The Practical
+                  Guide" course taught my Maximilian Schwarzmüller, available on
+                  Udemy.&nbsp;
+                </a>
+                <div class="home-container27">
+                  <span class="home-name12">Tech</span>
+                  <ul class="home-ul20 list">
+                    <li class="list-item">
+                      <span>
+                        <span>Docker</span>
+                        <br />
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <span>
+                        <span>External and Cross-Container Networking</span>
+                        <br />
+                      </span>
+                    </li>
+                    <li class="list-item"><span>Docker Compose</span></li>
+                    <li class="list-item">
+                      <span>Managing Data &amp; Volumes</span>
+                    </li>
+                    <li class="list-item">
+                      <span>Multi-Architecture Builds</span>
+                    </li>
+                    <li class="list-item">
+                      <span>
+                        Language-specific Docker Setups (Python, Javascript,
+                        Laravel/PHP)
+                      </span>
+                    </li>
+                    <li class="list-item"><span>Multi-Stage Builds</span></li>
+                    <li class="list-item">
+                      <span>Self Managed Deployments</span>
+                    </li>
+                    <li class="list-item"><span>ECS (as well)</span></li>
+                    <li class="list-item"><span>MongoDB</span></li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/AlexTNewell/3_Docker_Microservices"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-choose4 button"
+                >
+                  CHECK IT OUT
+                </a>
+              </div>
+            </div>
+            <div class="home-card5">
+              <div class="home-card-heading5">
+                <span class="home-price5">The Kubernetes Project</span>
+              </div>
+              <div class="home-card-content5">
+                <span class="home-name13">
+                  A project to demonstrate my proficiency with Kubernetes.
+                </span>
+                <a
+                  href="https://www.udemy.com/course/docker-kubernetes-the-practical-guide/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-name14"
+                >
+                  Built as part of the "Docker &amp; Kubernetes: The Practical
+                  Guide" course taught my Maximilian Schwarzmüller, available on
+                  Udemy.&nbsp;
+                </a>
+                <div class="home-container28">
+                  <span class="home-name15">Tech</span>
+                  <ul class="home-ul21 list">
+                    <li class="list-item">
+                      <span>
+                        <span>Docker</span>
+                        <br />
+                      </span>
+                    </li>
+                    <li class="list-item"><span>Kubernetes</span></li>
+                    <li class="list-item">
+                      <span>Managing Data &amp; Volumes</span>
+                    </li>
+                    <li class="list-item"><span>Networking</span></li>
+                    <li class="list-item">
+                      <span>Self Managed Deployments</span>
+                    </li>
+                    <li class="list-item"><span>EKS (as well)</span></li>
+                    <li class="list-item"><span>MongoDB</span></li>
+                  </ul>
+                </div>
+                <button class="home-choose5 button">CHECK IT OUT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-hire">
+          <div class="home-container29">
+            <h1 id="hire-me" class="home-text154">Choose What Works For You</h1>
+            <div class="home-container30">
+              <a
+                href="https://calendly.com/newellal/consultation"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link08"
+              >
+                <div class="home-pricing-card">
+                  <span class="home-text155">PAY AS YOU GO</span>
+                  <span class="home-text156">Flexible</span>
+                  <div class="home-container31">
+                    <span class="home-text157">£</span>
+                    <span class="home-text158">19</span>
+                    <span class="home-text159">/ Hour</span>
+                  </div>
+                  <div class="home-container32">
+                    <span class="home-text160">
+                      <span class="home-text161">✔ Pay As You Go</span>
+                      <br class="home-text162" />
+                      <span class="home-text163">✔ No Upfront Costs</span>
+                      <br class="home-text164" />
+                      <span class="home-text165">
+                        ✔ Cyber Liability Insured
+                      </span>
+                      <br />
+                      <span>✔ FREE Consultation</span>
+                      <br />
+                      <span>✔ Unlimited Contact During Contracted Hours</span>
+                      <br />
+                      <span>✔ No Recruiters</span>
+                      <br />
+                      <span>✔ No HR</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-container33">
+                    <button class="home-button button">BOOK</button>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://calendly.com/newellal/consultation"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link09"
+              >
+                <div class="home-pricing-card1">
+                  <span class="home-text175">full time</span>
+                  <span class="home-text176">160 Hours / Month</span>
+                  <div class="home-container34">
+                    <span class="home-text177">£</span>
+                    <span class="home-text178">15</span>
+                    <span class="home-text179">/ Hour</span>
+                  </div>
+                  <div class="home-container35">
+                    <span class="home-text180">
+                      <span>✔ 160 Hours of Work</span>
+                      <span></span>
+                      <br />
+                      <span>✔ No Upfront Costs</span>
+                      <br />
+                      <span>✔ Cyber Liability Insured</span>
+                      <br />
+                      <span>✔ FREE Consultation</span>
+                      <br />
+                      <span>✔ Daily Timesheets &amp; Progress Reports</span>
+                      <br />
+                      <span>✔ Unlimited Contact During Contracted Hours</span>
+                      <br />
+                      <span>✔ No Recruiters</span>
+                      <br />
+                      <span>✔ No HR</span>
+                    </span>
+                  </div>
+                  <div class="home-container36">
+                    <button class="home-button1 button">BOOK</button>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://calendly.com/newellal/consultation"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link10"
+              >
+                <div class="home-pricing-card2">
+                  <span class="home-text197">part time</span>
+                  <span class="home-text198">80 Hours / Month</span>
+                  <div class="home-container37">
+                    <span class="home-text199">£</span>
+                    <span class="home-text200">17</span>
+                    <span class="home-text201">/ Hour</span>
+                  </div>
+                  <div class="home-container38">
+                    <span class="home-text202">
+                      <span>✔ 80 Hours of Work</span>
+                      <br />
+                      <span>✔ No Upfront Costs</span>
+                      <br />
+                      <span>✔ Cyber Liability Insured</span>
+                      <br />
+                      <span>✔ FREE Consultation</span>
+                      <br />
+                      <span>✔ Daily Timesheets &amp; Progress Reports</span>
+                      <br />
+                      <span>✔ Unlimited Contact During Contracted Hours</span>
+                      <br />
+                      <span>✔ No Recruiters</span>
+                      <br />
+                      <span>✔ No HR</span>
+                    </span>
+                  </div>
+                  <div class="home-container39">
+                    <button class="home-button2 button">BOOK</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
